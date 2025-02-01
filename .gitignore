@@ -1,0 +1,6 @@
+node_modules
+dist
+*.log
+serviceAccountKey.json
+loginCredentials.json
+package-lock.json
