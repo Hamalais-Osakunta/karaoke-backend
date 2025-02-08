@@ -86,6 +86,7 @@ async function setNextSongToPlay() {
                         status: config_1.PlayStatus.TRYING_TO_PLAY,
                         timestampTryingToPlay: firebaseAdmin_1.admin.firestore.FieldValue.serverTimestamp(),
                         tries: 0,
+                        id: nextSongDoc.ref.id,
                     });
                     console.log(`Next song (${nextSongDoc.id}) set to play.`);
                 }

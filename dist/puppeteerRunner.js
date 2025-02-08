@@ -7,6 +7,7 @@ const puppeteer_1 = __importDefault(require("puppeteer"));
 const login_1 = require("./login");
 const PlaybackService_1 = require("./PlaybackService");
 async function main() {
+    // const url = process.env.URL;
     let browser = null;
     try {
         browser = await puppeteer_1.default.launch({
