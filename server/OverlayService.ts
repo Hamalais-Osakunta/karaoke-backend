@@ -10,7 +10,7 @@ declare global {
 
 export async function openUnclickableKaraokeQueue(page: any): Promise<void> {
     try {
-      await createKaraokeQueueToggle(page, 'https://karaoke-29c39.web.app/trying-to-play-screen');
+      await createKaraokeQueueToggle(page, 'https://karaoke.hamis.fi/trying-to-play-screen');
       await page.evaluate(() => {
         const overlay = document.getElementById('song-list-overlay');
         const openButton = document.getElementById('open-queue-button');
@@ -31,7 +31,7 @@ export async function openUnclickableKaraokeQueue(page: any): Promise<void> {
   
   export async function openKaraokeQueue(page: any): Promise<void> {
     try {
-      await createKaraokeQueueToggle(page, 'https://karaoke-29c39.web.app/karaoke-screen');
+      await createKaraokeQueueToggle(page, 'https://karaoke.hamis.fi/karaoke-screen');
       await page.evaluate(() => {
         const overlay = document.getElementById('song-list-overlay');
         const openButton = document.getElementById('open-queue-button');
@@ -52,7 +52,7 @@ export async function openUnclickableKaraokeQueue(page: any): Promise<void> {
   
   export async function closeKaraokeQueue(page: any): Promise<void> {
     try {
-      await createKaraokeQueueToggle(page, 'https://karaoke-29c39.web.app/karaoke-screen');
+      await createKaraokeQueueToggle(page, 'https://karaoke.hamis.fi/karaoke-screen');
       await page.evaluate(() => {
         const overlay = document.getElementById('song-list-overlay');
         const openButton = document.getElementById('open-queue-button');
@@ -67,7 +67,7 @@ export async function openUnclickableKaraokeQueue(page: any): Promise<void> {
         if (!smallIframe) {
           smallIframe = document.createElement('iframe');
           smallIframe.id = 'small-iframe';
-          (smallIframe as HTMLIFrameElement).src = 'https://karaoke-29c39.web.app/scrolling-bar';
+          (smallIframe as HTMLIFrameElement).src = 'https://karaoke.hamis.fi/scrolling-bar';
           Object.assign(smallIframe.style, {
             position: 'fixed',
             top: '0',

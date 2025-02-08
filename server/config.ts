@@ -1,6 +1,6 @@
 export const FIREBASE_CONFIG = {
     serviceAccountPath: './serviceAccountKey.json',
-    databaseURL: 'https://karaoke-29c39.firebaseio.com',
+    databaseURL: 'https://karaoke-prod-811c2.firebaseio.com',
   };
   
   export const FIRESTORE_COLLECTIONS = {

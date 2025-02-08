@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.closeKaraokeQueue = exports.openKaraokeQueue = exports.openUnclickableKaraokeQueue = void 0;
 async function openUnclickableKaraokeQueue(page) {
     try {
-        await createKaraokeQueueToggle(page, 'https://karaoke-29c39.web.app/trying-to-play-screen');
+        await createKaraokeQueueToggle(page, 'https://karaoke.hamis.fi/trying-to-play-screen');
         await page.evaluate(() => {
             const overlay = document.getElementById('song-list-overlay');
             const openButton = document.getElementById('open-queue-button');
@@ -26,7 +26,7 @@ async function openUnclickableKaraokeQueue(page) {
 exports.openUnclickableKaraokeQueue = openUnclickableKaraokeQueue;
 async function openKaraokeQueue(page) {
     try {
-        await createKaraokeQueueToggle(page, 'https://karaoke-29c39.web.app/karaoke-screen');
+        await createKaraokeQueueToggle(page, 'https://karaoke.hamis.fi/karaoke-screen');
         await page.evaluate(() => {
             const overlay = document.getElementById('song-list-overlay');
             const openButton = document.getElementById('open-queue-button');
@@ -49,7 +49,7 @@ async function openKaraokeQueue(page) {
 exports.openKaraokeQueue = openKaraokeQueue;
 async function closeKaraokeQueue(page) {
     try {
-        await createKaraokeQueueToggle(page, 'https://karaoke-29c39.web.app/karaoke-screen');
+        await createKaraokeQueueToggle(page, 'https://karaoke.hamis.fi/karaoke-screen');
         await page.evaluate(() => {
             const overlay = document.getElementById('song-list-overlay');
             const openButton = document.getElementById('open-queue-button');
@@ -64,7 +64,7 @@ async function closeKaraokeQueue(page) {
             if (!smallIframe) {
                 smallIframe = document.createElement('iframe');
                 smallIframe.id = 'small-iframe';
-                smallIframe.src = 'https://karaoke-29c39.web.app/scrolling-bar';
+                smallIframe.src = 'https://karaoke.hamis.fi/scrolling-bar';
                 Object.assign(smallIframe.style, {
                     position: 'fixed',
                     top: '0',

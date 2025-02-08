@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.PlayStatus = exports.TIMEOUTS = exports.FIRESTORE_COLLECTIONS = exports.FIREBASE_CONFIG = void 0;
 exports.FIREBASE_CONFIG = {
     serviceAccountPath: './serviceAccountKey.json',
-    databaseURL: 'https://karaoke-29c39.firebaseio.com',
+    databaseURL: 'https://karaoke-prod-811c2.firebaseio.com',
 };
 exports.FIRESTORE_COLLECTIONS = {
     settings: 'settings',
