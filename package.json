@@ -6,7 +6,13 @@
     "scripts": {
       "build": "tsc",
       "start": "node dist/puppeteerRunner.js",
-      "dev": "ts-node-dev --respawn --transpile-only server/puppeteerRunner.ts"
+      "dev": "ts-node-dev --respawn --transpile-only server/puppeteerRunner.ts",
+      "start:prod": "export URL=https://karaoke.hamis.fi node dist/puppeteerRunner.js",
+      "start:dev": "export URL=https://karaoke-dev-bbbb5.web.app/ node dist/puppeteerRunner.js",
+      "start:local": "export URL=http://localhost:5173/ node dist/puppeteerRunner.js",
+      "dev:dev": "export URL=https://karaoke-dev-bbbb5.web.app/ ts-node-dev --respawn --transpile-only server/puppeteerRunner.ts",
+      "dev:prod": "export URL=https://karaoke.hamis.fi ts-node-dev --respawn --transpile-only server/puppeteerRunner.ts",
+      "dev:local": "export URL=http://localhost:5173/ ts-node-dev --respawn --transpile-only server/puppeteerRunner.ts"
     },
     "keywords": [],
     "dependencies": {

@@ -93,6 +93,7 @@ export async function setNextSongToPlay(): Promise<void> {
                         status: PlayStatus.TRYING_TO_PLAY,
                         timestampTryingToPlay: admin.firestore.FieldValue.serverTimestamp(),
                         tries: 0,
+                        id: nextSongDoc.ref.id,
                     });
                     console.log(`Next song (${nextSongDoc.id}) set to play.`);
                 } else {

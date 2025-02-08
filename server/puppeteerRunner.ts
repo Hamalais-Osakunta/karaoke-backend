@@ -3,6 +3,8 @@ import { login } from './login';
 import { monitorKaraokePlayer, monitorPlayingSong, startKaraokePlayerListener } from './PlaybackService';
 
 async function main(): Promise<void> {
+  // const url = process.env.URL;
+
   let browser: Browser | null = null;
   try {
     browser = await puppeteer.launch({
